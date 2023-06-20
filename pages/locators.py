@@ -17,10 +17,14 @@ class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     REGISTER_LINK = (By.CSS_SELECTOR, '#register_form')
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators:
     PRODUCT_ITEM = (By.CSS_SELECTOR, '.basket-items')
     MESSAGE_EMPTY_BASKET = (By.CSS_SELECTOR, '#content_inner')
 
-
-
+class LoginPageLocators:
+    NEW_EMAIL = (By.CSS_SELECTOR, '#id_registration-email')
+    NEW_PASSWORD = (By.CSS_SELECTOR, '#id_registration-password1')
+    REPEAT_NEW_PASSWORD = (By.CSS_SELECTOR, '#id_registration-password2')
+    REGISTER_BUTTON = (By.CSS_SELECTOR, '.register_form .btn.btn-lg.btn-primary')

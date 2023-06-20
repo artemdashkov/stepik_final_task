@@ -4,6 +4,10 @@ from .base_page import BasePage
 from .locators import ProductPageLocators
 
 class ProductPage(BasePage):
+    def add_product_in_basket_for_users(self):
+        product_page_link = self.browser.find_element(*ProductPageLocators.ADD_IN_BASKET_LINK)
+        product_page_link.click()
+
     def add_product_in_basket(self):
         product_page_link = self.browser.find_element(*ProductPageLocators.ADD_IN_BASKET_LINK)
         product_page_link.click()
